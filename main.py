@@ -14,7 +14,11 @@ def index():
 def news():
     return "Тут будут новости"
 
+@app.get("/games")
+def games():
+    return "Тут будет все связанное с играми"
+
 
 @app.get("/about/")
 def about():
-    return "Тут будут \"О нас\""
+    return "Тут будет \"О проекте\""
